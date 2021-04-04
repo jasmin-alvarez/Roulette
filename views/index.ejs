@@ -1,0 +1,64 @@
+<!-- //worked with my house hayden  -->
+
+
+
+<!doctype html>
+<html>
+<head>
+    <title>Roulette</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <img src="img/casino.gif" alt="casino">
+
+        <div class="gameBoard">
+            <h2 class="betTooLittle"></h2>
+            
+                <input type="number" placeholder="$" id="bettingValue">
+                <select id="choice">
+                    <option value="red">Red</option>
+                    <option value="black">Black</option>
+                    <option value="even">Even</option>
+                    <option value="odd">Odd</option>
+                    <option value="row1">Row 1</option>
+                    <option value="row2">Row 2</option>
+                    <option value="row3">Row 3</option>
+                    <option value="1-12">1 - 12</option>
+                    <option value="13-24">13 - 24</option>
+                    <option value="25-36">25 - 36</option>
+                    <option value="1-18">1 - 18</option>
+                    <option value="19-36">19 - 36</option>
+                    <option value="0">0</option>
+                    <option value="00">00</option>
+                </select>
+            </form>
+            <button id="submitBet"><p>Bet!</p></button>
+        </div>
+      
+
+       
+
+    </div>
+
+</div>
+<section class="lastGamePlayed">
+  <%if (lastGame!==undefined) {%>
+      <h2><%= (lastGame.houseWins) ? 'You Lost! The casino loves you!' : 'You Win! ... Just... Just Leave' %></h2>
+      <h2>You bet $<%= lastGame.bettingAmount >= 1000 ? overThousand : lastGame.bettingAmount %>.00</h2>
+      <h2>You bet on <%= lastGame.betOn %></h2>
+      <h2>The ball landed on <%= lastGame.landed %></h2>
+  <%}%>
+</section>
+<div class="first">
+  <span> Admin Login:</span>
+  <div class="Admin">
+  <a href="/login" id ="admin" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+</div></div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

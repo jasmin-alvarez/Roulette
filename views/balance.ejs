@@ -1,0 +1,85 @@
+<!-- //worked with my house hayden  -->
+
+
+<!Doctype html>
+<html>
+<head>
+    <title>Roulette</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div id="casino" class="container">
+
+    <div class="page-header text-center">
+        <h1 id="admin2"><span class="fa fa-anchor"></span>Admin Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+        <div class="col-sm-6">
+
+         
+
+          <!-- <ul class="balanceSheet">  --> <table class="table1">
+            <div class="tracker">
+              <h2>Casino's Profit Tracker</h2>
+              <h4>(Games Tracker below)</h4>
+            <h2>House Revenue: $<%= wins >= 1000 ? winsOverThousand : wins %>.00</h2>
+            <h2>House Losses: 
+              <%= (losses > 0 ? '-$' : '$') + (losses >= 1000 ? lossesOverThousand : losses) %>.00
+            </h2>
+            <h2>House Profit: <%= (wins - losses < 0 ? '-$' : '$') + (profit >= 1000 ? profitOverThousand : profit) %>.00</h2>
+          </div>
+          <% for(var i=0; i<games.length; i++) {%>
+
+            <!-- <li class="balance">
+              <ul>
+                <li>Betting Amount: <span><%= games[i].bettingAmount %></span></li>
+                <li>Bet On: <span><%= games[i].betOn %></span></li>
+                <li>Landed: <span><%= games[i].landed %></span></li>
+                <li>House Won: <span><%= games[i].houseWins %></span></li>
+              </ul>
+            </li> -->
+             
+              <tr class ="tableR">
+
+
+                <td>Betting Amount: <span><%= games[i].bettingAmount %></span></td>
+                <td>Bet On: <span><%= games[i].betOn %></span></td>
+                <td>Landed: <span><%= games[i].landed %></span></td>
+                <td id="won">House Won: <span><%= games[i].houseWins %></span></td>
+             
+         
+          <% } %>
+          <tr>
+          <!-- </ul> -->            </table>
+        
+
+</div>
+
+</body>
+</html>

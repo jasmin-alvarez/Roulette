@@ -1,0 +1,139 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-size:cover;
+  background-image:url('https://onartandaesthetics.files.wordpress.com/2017/11/gambling-2001129_960_720.jpg?w=894&h=561')
+}
+img{
+  height: 200px;
+  background-color: black;
+}
+
+.jumbotron {
+ width: 50%;
+ /* background-color: rgba(202, 75, 75, 0.425); */
+ background-color: rgba(248, 232, 232, 0.829) ;
+
+}
+
+.lastGamePlayed{
+  float:right;
+}
+
+.first{
+
+background-color: rgba(199, 25, 25, 0.925);
+position:absolute;
+top:3%;
+left:89%;
+width:10%;
+color:black;
+font-size: 18px;
+text-align: center;
+align-items: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.betTooLittle{
+  color:black;
+  /* background-color: rgb(185, 17, 17); */
+  font-size:20px;
+  font-weight:bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Admin{
+  padding:5%;
+ 
+}
+
+input,option{
+  background-color: rgb(238, 236, 232);
+  height:45%;
+  width:45%;
+  font-weight: bolder;
+  font-size:20px;
+}
+
+#submitBet{
+ width:15%;
+ height:40px;
+ text-align: center;
+ background-color: rgba(185, 25, 25, 0.925);
+ border:3px solid black;
+ /* box-shadow: 2px 2px rgb(206, 4, 4); */
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#login,#signup{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:black;
+  font-weight: bolder;
+}
+
+#casino{
+  background-color: rgba(63, 3, 3, 0.753) ;
+  color:black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
+}
+
+.table1 {
+  background-color: rgba(248, 232, 232, 0.747) ;
+  width: 100%;
+  border-spacing:0;
+  margin-bottom: 15px;
+  position:absolute;
+  top:110%;
+  right:45%;
+}
+.tracker{
+  text-shadow: 2px 2px 5px rgb(236, 10, 10);
+  font-weight: bolder;
+  background-color: rgba(248, 232, 232, 0.966) ;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+td{
+  padding:2%;
+  width: 45%;
+  border: 1px solid#810606;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgba(248, 232, 232, 0.562) ;
+  word-wrap: break-word;
+
+}
+
+#admin2{
+  text-shadow: 2px 2px 5px rgb(236, 10, 10);
+  font-weight: bolder;
+  background-color: rgba(248, 232, 232, 0.966) ;
+  text-align: center;
+  width:55%;
+  margin-left:25%;
+
+}
+
+.well{
+  background-color: rgba(248, 232, 232, 0.966) ;
+
+}
+
+.lastGamePlayed{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 5px rgb(236, 10, 10);
+  position:absolute;
+  top:25%;
+  left:55%;
+  width:40%;
+  text-align: center;
+  background-color: rgba(248, 232, 232, 0.815) ;
+  color:black;
+  
+  
+  
+  }

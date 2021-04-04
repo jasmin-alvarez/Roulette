@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Roulette</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div id="login" class="col-sm-6 col-sm-offset-3"style="background-color:rgba(248, 232, 232, .800)"; >
+
+    <h1><span class="fa fa-sign-in"></span>Admin Login</h1>
+
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+    <% } %>
+
+    <!-- LOGIN FORM -->
+    <form action="/login" method="post">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg" style="background-color:rgb(107, 5, 5);border:3px solid black">Login</button>
+    </form>
+
+    <hr>
+
+    <p>Need an account? <a href="/signup" style="font-weight: bolder; color:rgb(143, 17, 17);font-size:18px;">Signup</a></p>
+    <p>Or go <a href="/" style="font-weight: bolder; color:rgb(143, 17, 17);font-size:18px;">Home</a>.</p>
+
+
+</div>
+</div>
+</body>
+</html>
